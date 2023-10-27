@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    branches: [$default-branch]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18
+
+      - name: Install dependencies and build
+        run: |
+          deno cache scripts/*.ts tests/*.ts
+          deno task build
+      - name: Type check
+        run: deno check ./**/*.ts
+      - name: Format
+        run: deno fmt
+      - name: Lint
+        run: deno lint
+      - name: Test
+        run: deno test -A
+      - name: Package Extension
+        id: packageExtension
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: "secret"
+          dryRun: true
