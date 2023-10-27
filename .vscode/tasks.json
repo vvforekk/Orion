@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "deno",
+      "command": "task",
+      "args": [
+        "build"
+      ],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno task: build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "deno",
+      "command": "task",
+      "args": [
+        "install"
+      ],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno task: install",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
