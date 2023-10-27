@@ -1,0 +1,8 @@
+*
+**/*
+!CHANGELOG.md
+!LICENSE
+!README.md
+!assets/icon.png
+!dist/
+!package.json

@@ -1,0 +1,39 @@
+{
+  "imports": {
+    "@/": "./src/",
+    "$std": "https://deno.land/std@0.204.0",
+    "$std/": "https://deno.land/std@0.204.0/",
+    "esbuild": "https://deno.land/x/esbuild@v0.19.5/mod.js",
+    "esbuild-deno-loader": "https://deno.land/x/esbuild_deno_loader@0.8.2/mod.ts",
+    "vscode-deno": "https://deno.land/x/vscode@1.83.0/mod.ts",
+    "@ctrl/tinycolor": "https://esm.sh/v130/@ctrl/tinycolor@4.0.2",
+    "@radix-ui/colors": "https://esm.sh/v130/@radix-ui/colors@3.0.0",
+    "@vscode/vsce": "https://esm.sh/v130/*@vscode/vsce@2.21.1",
+    "just-range": "https://esm.sh/v130/just-range@4.2.0",
+    "just-safe-set": "https://esm.sh/v130/just-safe-set@4.2.1"
+  },
+  "scopes": {
+    "https://esm.sh/v130/": {
+      "azure-devops-node-api": "https://esm.sh/v130/azure-devops-node-api@11.2.0",
+      "chalk": "https://esm.sh/v130/chalk@2.4.2",
+      "cheerio": "https://esm.sh/v130/cheerio@1.0.0-rc.12",
+      "commander": "https://esm.sh/v130/commander@6.2.1",
+      "glob": "https://esm.sh/v130/glob@7.2.3",
+      "hosted-git-info": "https://esm.sh/v130/hosted-git-info@4.1.0",
+      "jsonc-parser": "https://esm.sh/v130/jsonc-parser@3.2.0",
+      "leven": "https://esm.sh/v130/leven@3.1.0",
+      "markdown-it": "https://esm.sh/v130/markdown-it@12.3.2",
+      "mime": "https://esm.sh/v130/mime@1.6.0",
+      "minimatch": "https://esm.sh/v130/minimatch@3.1.2",
+      "parse-semver": "https://esm.sh/v130/parse-semver@1.1.1",
+      "read": "https://esm.sh/v130/read@1.0.7",
+      "semver": "https://esm.sh/v130/semver@7.5.4",
+      "tmp": "https://esm.sh/v130/tmp@0.2.1",
+      "typed-rest-client": "https://esm.sh/v130/typed-rest-client@1.8.11",
+      "url-join": "https://esm.sh/v130/url-join@4.0.1",
+      "xml2js": "https://esm.sh/v130/xml2js@0.5.0",
+      "yauzl": "https://esm.sh/v130/yauzl@2.10.0",
+      "yazl": "https://esm.sh/v130/yazl@2.5.1"
+    }
+  }
+}
