@@ -1,5 +1,5 @@
 {
-  "name": "orione",
+  "name": "orion-vscode",
   "displayName": "Orion",
   "publisher": "SaiYs",
   "version": "0.0.1",
@@ -27,7 +27,7 @@
     "configuration": {
       "title": "Orion",
       "properties": {
-        "orion.accentColor": {
+        "orion-vscode.accentColor": {
           "default": "indigo",
           "enum": [
             "tomato",

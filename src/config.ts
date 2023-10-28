@@ -12,7 +12,7 @@ export const configSchemaJson =
   packageJsonObject["contributes"]["configuration"]["properties"];
 
 export const defaultConfig: Configuration = {
-  accent: configSchemaJson["orion.accentColor"]
+  accent: configSchemaJson["orion-vscode.accentColor"]
     .default as RadixColorId,
 };
 
@@ -21,7 +21,7 @@ export const isDefaultConfig = (config: Configuration) => {
 };
 
 export const getConfig = (vscode: VSCodeAPI): Configuration => {
-  const config = vscode.workspace.getConfiguration("orion");
+  const config = vscode.workspace.getConfiguration("orion-vscode");
 
   return {
     accent: config.get<RadixColorId>("accentColor") ??
