@@ -33,5 +33,5 @@ jobs:
         id: packageExtension
         uses: HaaLeo/publish-vscode-extension@v1
         with:
-          pat: ${{ secrets.OPEN_VSIX_TOKEN }}
+          pat: ${{ secrets.OPEN_VSX_TOKEN }}
           dryRun: true
