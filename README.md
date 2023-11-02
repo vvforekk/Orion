@@ -2,6 +2,17 @@
 
 A constomizable vscode theme, built on `Deno` and `Radix Colors`.
 
+## Gallery
+
+### Rust (mint)
+![Rust (mint)](assets/screenshots/rust-mint.png)
+
+### TypeScript (indigo)
+![TypeScript (indigo)](assets/screenshots/typescript-indigo.png)
+
+### TypeScript React (plum)
+![TypeScript React (plum)](assets/screenshots/typescriptreact-plum.png)
+
 ## Design Philosophy
 
 1. Every color should be used purposively.
@@ -36,7 +47,18 @@ A constomizable vscode theme, built on `Deno` and `Radix Colors`.
 
 ## Configuration
 
-TODO: description of configuration
+### `orion-vscode.accentColor`
+
+Pick your favorite color from the colorful palette by `Radix Colors`.
+
+(default: "indigo")
+
+### `orion-vscode.neutralGray`
+
+By default, saturated grayscale colors from `Radix Colors` are used.
+If you prefer desaturated grayscale colors, you can disable it and use neutral gray colors.
+
+(default: false)
 
 ## Language support
 
@@ -51,10 +73,6 @@ TODO: description of configuration
 - TOML
 - YAML
 - Markdown
-
-## Gallery
-
-TODO: Add screenshots
 
 ## Inspirated by
 
