@@ -2,7 +2,7 @@
   "name": "orion-vscode",
   "displayName": "Orion",
   "publisher": "SaiYs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A constomizable vscode theme, built on `Deno` and `Radix Colors`.",
   "license": "MIT",
   "repository": {
