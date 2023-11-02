@@ -21,12 +21,26 @@ jobs:
         run: deno task build
       - name: CI
         run: deno task ci
-      - name: Publish to Open VSX Registry
+      - name: Package Extension
+        id: packageExtension
         uses: HaaLeo/publish-vscode-extension@v1
         with:
-          pat: ${{ secrets.OPEN_VSX_TOKEN }}
+          yarn: true
+          pat: stub
+          dryRun: true
+      - name: Publish to GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run:
+          gh release upload ${{ github.ref_name }} ${{ steps.packageExtension.outputs.vsixPath }}
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v1
         with:
           pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          extensionFile: ${{ steps.packageExtension.outputs.vsixPath }}
           registryUrl: https://marketplace.visualstudio.com
+      - name: Publish to Open VSX Registry
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.OPEN_VSX_TOKEN }}
+          extensionFile: ${{ steps.packageExtension.outputs.vsixPath }}
