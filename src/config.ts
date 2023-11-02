@@ -6,14 +6,8 @@ type Configuration = {
   accent: RadixColorId;
 };
 
-const packageJsonText = Deno.readTextFileSync("package.json");
-const packageJsonObject = JSON.parse(packageJsonText);
-export const configSchemaJson =
-  packageJsonObject["contributes"]["configuration"]["properties"];
-
 export const defaultConfig: Configuration = {
-  accent: configSchemaJson["orion-vscode.accentColor"]
-    .default as RadixColorId,
+  accent: "indigo"
 };
 
 export const isDefaultConfig = (config: Configuration) => {
