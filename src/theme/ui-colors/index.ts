@@ -675,9 +675,6 @@ export const uiColors = (
   "walkThrough.embeddedEditorBackground": palette.bg.default,
   "walkthrough.stepTitle.foreground": palette.text.deep,
 
-  // Source control
-  "scm.providerBorder": palette.border.default,
-
   // Git
   "gitDecoration.untrackedResourceForeground": palette.git.added[11],
   "gitDecoration.addedResourceForeground": palette.git.added[12],
