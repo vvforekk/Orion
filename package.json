@@ -65,8 +65,13 @@
             "olive",
             "sand"
           ],
-          "markdownDescription": "Controls accent color. Reloading window will be required to apply update to the current theme",
-          "type": "string"
+          "type": "string",
+          "markdownDescription": "Controls accent color. Reloading window will be required to apply update to the current theme"
+        },
+        "orion-vscode.neutralGray": {
+          "default": false,
+          "type": "boolean",
+          "markdownDescription": "Use neutral grayscale color"
         }
       }
     },

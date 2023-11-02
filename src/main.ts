@@ -18,7 +18,7 @@ const isFreshInstall = async (ctx: ExtensionContext, vscode: VSCodeAPI) => {
 };
 
 const promptToReload = (vscode: VSCodeAPI) => {
-  const message = "Orion: Reload required because theme is updated.";
+  const message = "Orion: Reload required to apply updated theme.";
   const actionMessage = "Reload";
 
   vscode.window.showInformationMessage(message, actionMessage).then(
@@ -80,7 +80,7 @@ export const activate = async (ctx: ExtensionContext) => {
 
   ctx.subscriptions.push(
     vscode.workspace.onDidChangeConfiguration((event) => {
-      if (event.affectsConfiguration("orion")) {
+      if (event.affectsConfiguration("orion-vscode")) {
         const updatedConfig = getConfig(vscode);
         const options = themeVariants(updatedConfig);
 
