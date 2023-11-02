@@ -25,7 +25,6 @@ jobs:
         id: packageExtension
         uses: HaaLeo/publish-vscode-extension@v1
         with:
-          yarn: true
           pat: stub
           dryRun: true
       - name: Publish to GitHub Release
