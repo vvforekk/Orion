@@ -8,11 +8,19 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
-      - run: npm ci
+          node-version: 18
+      - name: Install dependencies and build
+        run: deno task build
+      - name: CI
+        run: deno task ci
       - name: Publish to Open VSX Registry
         uses: HaaLeo/publish-vscode-extension@v1
         with:
