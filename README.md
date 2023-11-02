@@ -1,6 +1,6 @@
 # Orion Theme
 
-A vscode theme with various variants, built on `Deno` and `Radix Colors`.
+A constomizable vscode theme, built on `Deno` and `Radix Colors`.
 
 ## Design Philosophy
 
@@ -14,7 +14,7 @@ A vscode theme with various variants, built on `Deno` and `Radix Colors`.
 1. Clone repository
 
    ```sh
-   gh repo clone SaiYs/orion
+   gh repo clone SaiYs/Orion
    ```
 
 2. Build with the command
@@ -33,6 +33,10 @@ A vscode theme with various variants, built on `Deno` and `Radix Colors`.
 
    Alternatively, you can also choose `Extensions: Install from VSIX...` from
    command palette in VSCode, and select `orion.vsix` to install.
+
+## Configuration
+
+TODO: description of configuration
 
 ## Language support
 
