@@ -3,9 +3,12 @@
   "displayName": "Orion",
   "publisher": "SaiYs",
   "version": "0.0.1",
-  "description": "A set of themes for VSCode with customizable accent colors, based on `Radix Colors`: A gorgeous, accessible color system for user interfaces.",
+  "description": "A constomizable vscode theme, built on `Deno` and `Radix Colors`.",
   "license": "MIT",
-  "repository": "https://github.com/SaiYs/Orion.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SaiYs/Orion.git"
+  },
   "preview": false,
   "categories": [
     "Themes"

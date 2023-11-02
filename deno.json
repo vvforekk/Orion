@@ -16,7 +16,7 @@
     "build": "deno run -A ./scripts/build.ts",
     "dev": "deno run -A --watch ./scripts/build.ts",
     "generate": "deno run -A ./scripts/generateTheme.ts",
-    "install": "deno task build; vsce package --out orion.vsix; code --install-extension orion.vsix",
+    "install": "deno task build && vsce package --out orion.vsix && code --install-extension orion.vsix",
     "test": "deno test -A",
     "cov": "deno task test --coverage=cov_profile; deno coverage cov_profile",
     "lint": "deno lint",
