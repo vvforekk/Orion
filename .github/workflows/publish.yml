@@ -3,6 +3,11 @@ on:
     tags:
       - "*"
 
+
+permissions:
+  contents: write
+  pull-requests: write
+
 name: Deploy Extension
 jobs:
   deploy:
