@@ -129,6 +129,8 @@ export const createPalette = (
       hintA: radixColors[addSuffix({ scale: "indigo", alpha: true })],
       success: radixColors[addSuffix("mint")],
       successA: radixColors[addSuffix({ scale: "mint", alpha: true })],
+      match: radixColors[addSuffix("lime")],
+      matchA: radixColors[addSuffix({ scale: "lime", alpha: true })],
     },
 
     git: {

@@ -62,6 +62,8 @@ export interface PaletteType {
     hintA: ColorScale12;
     success: ColorScale12;
     successA: ColorScale12;
+    match: ColorScale12;
+    matchA: ColorScale12;
   };
 
   git: {
