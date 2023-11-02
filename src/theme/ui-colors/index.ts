@@ -182,7 +182,7 @@ export const uiColors = (
   // "editorGroup.focusedEmptyBorder": "",
   "editorGroup.dropIntoPromptForeground": palette.text.deep,
   "editorGroup.dropIntoPromptBackground": palette.bg.active,
-  "editorGroup.dropIntoPromptBorder": palette.border.active,
+  // "editorGroup.dropIntoPromptBorder": palette.border.active,
 
   "tab.activeBackground": palette.bg.deep,
   "tab.unfocusedActiveBackground": palette.bg.hovered,
@@ -287,7 +287,7 @@ export const uiColors = (
   "editorLightBulbAutoFix.foreground": palette.status.hint[11],
 
   "editorBracketMatch.background": palette.bg.active,
-  "editorBracketMatch.border": palette.border.active,
+  "editorBracketMatch.border": palette.accent[11],
 
   "editorBracketHighlight.unexpectedBracket.foreground":
     palette.status.error[10],
@@ -299,12 +299,12 @@ export const uiColors = (
   "editorBracketHighlight.foreground5": palette.gradiation[5],
   "editorBracketHighlight.foreground6": palette.gradiation[6],
 
-  "editorBracketPairGuide.activeBackground1": palette.text.deep,
-  "editorBracketPairGuide.activeBackground2": palette.text.deep,
-  "editorBracketPairGuide.activeBackground3": palette.text.deep,
-  "editorBracketPairGuide.activeBackground4": palette.text.deep,
-  "editorBracketPairGuide.activeBackground5": palette.text.deep,
-  "editorBracketPairGuide.activeBackground6": palette.text.deep,
+  "editorBracketPairGuide.activeBackground1": palette.accent[11],
+  "editorBracketPairGuide.activeBackground2": palette.accent[11],
+  "editorBracketPairGuide.activeBackground3": palette.accent[11],
+  "editorBracketPairGuide.activeBackground4": palette.accent[11],
+  "editorBracketPairGuide.activeBackground5": palette.accent[11],
+  "editorBracketPairGuide.activeBackground6": palette.accent[11],
 
   "editorBracketPairGuide.background1": palette.gradiation[1],
   "editorBracketPairGuide.background2": palette.gradiation[2],
