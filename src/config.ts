@@ -7,7 +7,7 @@ type Configuration = {
 };
 
 export const defaultConfig: Configuration = {
-  accent: "indigo"
+  accent: "indigo",
 };
 
 export const isDefaultConfig = (config: Configuration) => {
