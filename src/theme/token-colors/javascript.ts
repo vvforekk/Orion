@@ -14,29 +14,21 @@ export const tcJavaScript = (palette: PaletteType) => [
   },
   {
     name: "JavaScript: control operators",
-    scope: [
-      "keyword.operator.optional",
-      "keyword.operator.ternary",
-    ],
+    scope: ["keyword.operator.optional", "keyword.operator.ternary"],
     settings: {
       foreground: palette.semantic.controlOperator,
     },
   },
   {
     name: "JavaScript: Object keys",
-    scope: [
-      "meta.object-literal.key",
-      "variable.object.property",
-    ],
+    scope: ["meta.object-literal.key", "variable.object.property"],
     settings: {
       foreground: palette.semantic.variable,
     },
   },
   {
     name: "JavaScript: async",
-    scope: [
-      "storage.modifier.async",
-    ],
+    scope: ["storage.modifier.async"],
     settings: {
       foreground: palette.semantic.async,
     },
@@ -57,6 +49,13 @@ export const tcJavaScript = (palette: PaletteType) => [
     ],
     settings: {
       foreground: palette.semantic.nullish,
+    },
+  },
+  {
+    name: "JavaScript: importmeta",
+    scope: ["support.variable.property.importmeta"],
+    settings: {
+      foreground: palette.semantic.keyword,
     },
   },
 ];
