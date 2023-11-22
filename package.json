@@ -3,7 +3,7 @@
   "displayName": "Orion",
   "publisher": "SaiYs",
   "version": "0.1.0",
-  "description": "A constomizable vscode theme, built on `Deno` and `Radix Colors`.",
+  "description": "A customizable vscode theme, built on `Deno` and `Radix Colors`.",
   "license": "MIT",
   "repository": {
     "type": "git",
