@@ -1,6 +1,6 @@
 # Orion Theme
 
-A constomizable vscode theme, built on `Deno` and `Radix Colors`.
+A customizable vscode theme, built on `Deno` and `Radix Colors`.
 
 ## Gallery
 
