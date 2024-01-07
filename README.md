@@ -27,7 +27,8 @@ A customizable vscode theme, built on `Deno` and `Radix Colors`.
 
 ### From VSCode Marketplace
 
-Install from [https://marketplace.visualstudio.com/items?itemName=SaiYs.orion-vscode]
+Install from
+[https://marketplace.visualstudio.com/items?itemName=SaiYs.orion-vscode]
 
 ### From source
 
@@ -84,8 +85,7 @@ colors.
 - YAML
 - Markdown
 
-You don't find your languages?
-Please make a issue or PR!
+You don't find your languages? Please make a issue or PR!
 
 ## Inspirated by
 

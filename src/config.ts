@@ -3,26 +3,26 @@ import { RadixColorId } from "@/radix-colors/type.ts";
 import { VSCodeAPI } from "vscode-deno";
 
 export type Configuration = {
-	accentColor: RadixColorId;
-	neutralGray: boolean;
+  accentColor: RadixColorId;
+  neutralGray: boolean;
 };
 
 export const defaultConfig: Configuration = {
-	accentColor: "indigo",
-	neutralGray: false,
+  accentColor: "indigo",
+  neutralGray: false,
 };
 
 export const isDefaultConfig = (config: Configuration) => {
-	return equal(config, defaultConfig);
+  return equal(config, defaultConfig);
 };
 
 export const getConfig = (vscode: VSCodeAPI): Configuration => {
-	const config = vscode.workspace.getConfiguration("orion-vscode");
+  const config = vscode.workspace.getConfiguration("orion-vscode");
 
-	return {
-		accentColor:
-			config.get<RadixColorId>("accentColor") ?? defaultConfig.accentColor,
-		neutralGray:
-			config.get<boolean>("neutralGray") ?? defaultConfig.neutralGray,
-	};
+  return {
+    accentColor: config.get<RadixColorId>("accentColor") ??
+      defaultConfig.accentColor,
+    neutralGray: config.get<boolean>("neutralGray") ??
+      defaultConfig.neutralGray,
+  };
 };

@@ -1,16 +1,10 @@
 {
   "importMap": "import_map.json",
   "lint": {
-    "exclude": [
-      "dist",
-      "cov_profile"
-    ]
+    "exclude": ["dist", "cov_profile"]
   },
   "fmt": {
-    "exclude": [
-      "dist",
-      "cov_profile"
-    ]
+    "exclude": ["dist", "cov_profile"]
   },
   "tasks": {
     "build": "deno run -A ./scripts/build.ts",
@@ -19,8 +13,9 @@
     "install": "deno task build && vsce package --out orion.vsix && code --install-extension orion.vsix",
     "test": "deno test -A",
     "cov": "deno task test --coverage=cov_profile; deno coverage cov_profile",
-    "lint": "deno run -A npm:@biomejs/biome lint ./src",
-    "fmt": "deno run -A npm:@biomejs/biome format ./src --write",
+    "lint": "deno lint",
+    "fmt": "deno fmt",
+    "fmt:check": "deno fmt --check",
     "ci": "deno task lint; deno task fmt; deno task test",
     "update": "deno run -A --allow-run https://deno.land/x/udd@0.8.2/main.ts; deno task esm:update",
     "update:check": "deno run -A --allow-run https://deno.land/x/udd@0.8.2/main.ts --dry-run",

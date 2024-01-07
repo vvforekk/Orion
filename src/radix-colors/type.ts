@@ -1,7 +1,7 @@
 import { ColorScale12 } from "@/types/index.ts";
 import {
-	radixColorIds,
-	radixColorIdsExtended,
+  radixColorIds,
+  radixColorIdsExtended,
 } from "@/radix-colors/constants.ts";
 
 export type RadixColorId = typeof radixColorIds[number];

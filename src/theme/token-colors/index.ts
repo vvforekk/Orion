@@ -10,16 +10,16 @@ import { tcHtml } from "@/theme/token-colors/html.ts";
 import { tcJavaScript } from "@/theme/token-colors/javascript.ts";
 
 export const tokenColors = (palette: PaletteType) => [
-	...tcGlobal(palette),
+  ...tcGlobal(palette),
 
-	...tcHtml(palette),
-	...tcCss(palette),
-	...tcMarkdown(palette),
+  ...tcHtml(palette),
+  ...tcCss(palette),
+  ...tcMarkdown(palette),
 
-	...tcJson(palette),
-	...tcToml(palette),
-	...tcYaml(palette),
+  ...tcJson(palette),
+  ...tcToml(palette),
+  ...tcYaml(palette),
 
-	...tcJavaScript(palette),
-	...tcJsx(palette),
+  ...tcJavaScript(palette),
+  ...tcJsx(palette),
 ];
