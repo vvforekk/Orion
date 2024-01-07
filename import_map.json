@@ -1,11 +1,11 @@
 {
   "imports": {
     "@/": "./src/",
-    "$std": "https://deno.land/std@0.204.0",
-    "$std/": "https://deno.land/std@0.204.0/",
+    "$std": "https://deno.land/std@0.208.0",
+    "$std/": "https://deno.land/std@0.208.0/",
     "esbuild": "https://deno.land/x/esbuild@v0.19.5/mod.js",
     "esbuild-deno-loader": "https://deno.land/x/esbuild_deno_loader@0.8.2/mod.ts",
-    "vscode-deno": "https://deno.land/x/vscode@1.83.0/mod.ts",
+    "vscode-deno": "https://deno.land/x/vscode@1.85.0/mod.ts",
     "@ctrl/tinycolor": "https://esm.sh/v130/@ctrl/tinycolor@4.0.2",
     "@radix-ui/colors": "https://esm.sh/v130/@radix-ui/colors@3.0.0",
     "just-range": "https://esm.sh/v130/just-range@4.2.0",

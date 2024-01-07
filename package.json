@@ -10,22 +10,15 @@
     "url": "https://github.com/SaiYs/Orion.git"
   },
   "preview": false,
-  "categories": [
-    "Themes"
-  ],
+  "categories": ["Themes"],
   "keywords": [],
-  "extensionKind": [
-    "ui",
-    "workspace"
-  ],
+  "extensionKind": ["ui", "workspace"],
   "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.82.0"
   },
   "main": "dist/main.js",
-  "activationEvents": [
-    "onStartupFinished"
-  ],
+  "activationEvents": ["onStartupFinished"],
   "contributes": {
     "configuration": {
       "title": "Orion",
