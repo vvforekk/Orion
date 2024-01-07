@@ -25,13 +25,19 @@ A customizable vscode theme, built on `Deno` and `Radix Colors`.
 
 ## Installation
 
-1. Clone repository
+### From VSCode Marketplace
+
+Install from [https://marketplace.visualstudio.com/items?itemName=SaiYs.orion-vscode]
+
+### From source
+
+1. Clone the repository
 
    ```sh
    gh repo clone SaiYs/Orion
    ```
 
-2. Build with the command
+2. Build the extension
 
    ```sh
    deno task build
@@ -39,7 +45,7 @@ A customizable vscode theme, built on `Deno` and `Radix Colors`.
 
    Then, `orion.vsix` is generated in the project's root.
 
-3. Install VSIX file
+3. Install the VSIX file
 
    ```sh
    code --install-extension orion.vsix
@@ -48,7 +54,7 @@ A customizable vscode theme, built on `Deno` and `Radix Colors`.
    Alternatively, you can also choose `Extensions: Install from VSIX...` from
    command palette in VSCode, and select `orion.vsix` to install.
 
-## Configuration
+## Preference
 
 ### `orion-vscode.accentColor`
 
@@ -77,6 +83,9 @@ colors.
 - TOML
 - YAML
 - Markdown
+
+You don't find your languages?
+Please make a issue or PR!
 
 ## Inspirated by
 
