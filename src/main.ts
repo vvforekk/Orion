@@ -2,7 +2,7 @@ import { getConfig, isDefaultConfig } from "@/config.ts";
 import { compileTheme } from "@/theme/index.ts";
 import { themeVariants } from "@/theme/variants.ts";
 import { ThemeOptions } from "@/types/index.ts";
-import { ExtensionContext, importVsCodeApi, VSCodeAPI } from "vscode-deno";
+import { ExtensionContext, VSCodeAPI, importVsCodeApi } from "vscode-deno";
 
 const isFreshInstall = async (ctx: ExtensionContext, vscode: VSCodeAPI) => {
 	const flagUri = vscode.Uri.file(ctx.asAbsolutePath("dist/.flag"));
@@ -13,11 +13,11 @@ const isFreshInstall = async (ctx: ExtensionContext, vscode: VSCodeAPI) => {
 		)
 	) {
 		return false;
-	} else {
-		return vscode.workspace.fs
-			.writeFile(flagUri, Uint8Array.from([]))
-			.then(() => true);
 	}
+
+	return vscode.workspace.fs
+		.writeFile(flagUri, Uint8Array.from([]))
+		.then(() => true);
 };
 
 const promptToReload = (vscode: VSCodeAPI) => {
