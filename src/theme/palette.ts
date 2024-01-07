@@ -20,7 +20,7 @@ export const createPalette = (
   accent: string,
   type: "dark" | "light",
 ): PaletteType => {
-  const addSuffix: AddSuffixArgs = (args) => {
+  const appendSuffix: AddSuffixArgs = (args) => {
     const opt: {
       scale: string | undefined;
       dark: boolean;
@@ -40,13 +40,13 @@ export const createPalette = (
     }` as RadixColorIdExtended;
   };
 
-  const primaryColor = radixColors[addSuffix(primary)];
-  const primaryAColor = radixColors[addSuffix({ scale: primary, alpha: true })];
-  const secondaryColor = radixColors[addSuffix(secondary)];
+  const primaryColor = radixColors[appendSuffix(primary)];
+  const primaryAColor = radixColors[appendSuffix({ scale: primary, alpha: true })];
+  const secondaryColor = radixColors[appendSuffix(secondary)];
   const secondaryAColor =
-    radixColors[addSuffix({ scale: secondary, alpha: true })];
-  const accentColor = radixColors[addSuffix(accent)];
-  const accentAColor = radixColors[addSuffix({ scale: accent, alpha: true })];
+    radixColors[appendSuffix({ scale: secondary, alpha: true })];
+  const accentColor = radixColors[appendSuffix(accent)];
+  const accentAColor = radixColors[appendSuffix({ scale: accent, alpha: true })];
 
   // for normal color scales
   const syntaxColorFilter = (color: Color): Color =>
@@ -56,33 +56,33 @@ export const createPalette = (
     color.mix(secondaryColor[12], 40);
 
   const syntaxColorsPalette = {
-    tomato: syntaxColorFilter(radixColors[addSuffix("tomato")][11]),
-    red: syntaxColorFilter(radixColors[addSuffix("red")][11]),
-    ruby: syntaxColorFilter(radixColors[addSuffix("ruby")][11]),
-    crimson: syntaxColorFilter(radixColors[addSuffix("crimson")][11]),
-    pink: syntaxColorFilter(radixColors[addSuffix("pink")][11]),
-    plum: syntaxColorFilter(radixColors[addSuffix("plum")][11]),
-    purple: syntaxColorFilter(radixColors[addSuffix("purple")][11]),
-    violet: syntaxColorFilter(radixColors[addSuffix("violet")][11]),
-    iris: syntaxColorFilter(radixColors[addSuffix("iris")][11]),
-    indigo: syntaxColorFilter(radixColors[addSuffix("indigo")][11]),
-    blue: syntaxColorFilter(radixColors[addSuffix("blue")][11]),
-    cyan: syntaxColorFilter(radixColors[addSuffix("cyan")][11]),
-    teal: syntaxColorFilter(radixColors[addSuffix("teal")][11]),
-    jade: syntaxColorFilter(radixColors[addSuffix("jade")][11]),
-    green: syntaxColorFilter(radixColors[addSuffix("green")][11]),
-    grass: syntaxColorFilter(radixColors[addSuffix("grass")][11]),
-    orange: syntaxColorFilter(radixColors[addSuffix("orange")][11]),
-    brown: syntaxColorFilter(radixColors[addSuffix("brown")][11]),
+    tomato: syntaxColorFilter(radixColors[appendSuffix("tomato")][11]),
+    red: syntaxColorFilter(radixColors[appendSuffix("red")][11]),
+    ruby: syntaxColorFilter(radixColors[appendSuffix("ruby")][11]),
+    crimson: syntaxColorFilter(radixColors[appendSuffix("crimson")][11]),
+    pink: syntaxColorFilter(radixColors[appendSuffix("pink")][11]),
+    plum: syntaxColorFilter(radixColors[appendSuffix("plum")][11]),
+    purple: syntaxColorFilter(radixColors[appendSuffix("purple")][11]),
+    violet: syntaxColorFilter(radixColors[appendSuffix("violet")][11]),
+    iris: syntaxColorFilter(radixColors[appendSuffix("iris")][11]),
+    indigo: syntaxColorFilter(radixColors[appendSuffix("indigo")][11]),
+    blue: syntaxColorFilter(radixColors[appendSuffix("blue")][11]),
+    cyan: syntaxColorFilter(radixColors[appendSuffix("cyan")][11]),
+    teal: syntaxColorFilter(radixColors[appendSuffix("teal")][11]),
+    jade: syntaxColorFilter(radixColors[appendSuffix("jade")][11]),
+    green: syntaxColorFilter(radixColors[appendSuffix("green")][11]),
+    grass: syntaxColorFilter(radixColors[appendSuffix("grass")][11]),
+    orange: syntaxColorFilter(radixColors[appendSuffix("orange")][11]),
+    brown: syntaxColorFilter(radixColors[appendSuffix("brown")][11]),
 
-    sky: lighterSyntaxColorFilter(radixColors[addSuffix("sky")][11]),
-    mint: lighterSyntaxColorFilter(radixColors[addSuffix("mint")][11]),
-    lime: lighterSyntaxColorFilter(radixColors[addSuffix("lime")][11]),
-    yellow: lighterSyntaxColorFilter(radixColors[addSuffix("yellow")][11]),
-    amber: lighterSyntaxColorFilter(radixColors[addSuffix("amber")][11]),
+    sky: lighterSyntaxColorFilter(radixColors[appendSuffix("sky")][11]),
+    mint: lighterSyntaxColorFilter(radixColors[appendSuffix("mint")][11]),
+    lime: lighterSyntaxColorFilter(radixColors[appendSuffix("lime")][11]),
+    yellow: lighterSyntaxColorFilter(radixColors[appendSuffix("yellow")][11]),
+    amber: lighterSyntaxColorFilter(radixColors[appendSuffix("amber")][11]),
 
-    gold: syntaxColorFilter(radixColors[addSuffix("gold")][11]),
-    bronze: syntaxColorFilter(radixColors[addSuffix("bronze")][11]),
+    gold: syntaxColorFilter(radixColors[appendSuffix("gold")][11]),
+    bronze: syntaxColorFilter(radixColors[appendSuffix("bronze")][11]),
   };
 
   return {
@@ -121,34 +121,34 @@ export const createPalette = (
     },
 
     status: {
-      error: radixColors[addSuffix("tomato")],
-      errorA: radixColors[addSuffix({ scale: "tomato", alpha: true })],
-      warning: radixColors[addSuffix("amber")],
-      warningA: radixColors[addSuffix({ scale: "amber", alpha: true })],
-      info: radixColors[addSuffix("blue")],
-      infoA: radixColors[addSuffix({ scale: "blue", alpha: true })],
-      hint: radixColors[addSuffix("indigo")],
-      hintA: radixColors[addSuffix({ scale: "indigo", alpha: true })],
-      success: radixColors[addSuffix("mint")],
-      successA: radixColors[addSuffix({ scale: "mint", alpha: true })],
-      match: radixColors[addSuffix("lime")],
-      matchA: radixColors[addSuffix({ scale: "lime", alpha: true })],
+      error: radixColors[appendSuffix("tomato")],
+      errorA: radixColors[appendSuffix({ scale: "tomato", alpha: true })],
+      warning: radixColors[appendSuffix("amber")],
+      warningA: radixColors[appendSuffix({ scale: "amber", alpha: true })],
+      info: radixColors[appendSuffix("blue")],
+      infoA: radixColors[appendSuffix({ scale: "blue", alpha: true })],
+      hint: radixColors[appendSuffix("indigo")],
+      hintA: radixColors[appendSuffix({ scale: "indigo", alpha: true })],
+      success: radixColors[appendSuffix("mint")],
+      successA: radixColors[appendSuffix({ scale: "mint", alpha: true })],
+      match: radixColors[appendSuffix("lime")],
+      matchA: radixColors[appendSuffix({ scale: "lime", alpha: true })],
     },
 
     git: {
-      added: radixColors[addSuffix("jade")],
-      modified: radixColors[addSuffix("yellow")],
-      deleted: radixColors[addSuffix("ruby")],
-      renamed: radixColors[addSuffix("purple")],
-      conflicting: radixColors[addSuffix("pink")],
-      submodule: radixColors[addSuffix("brown")],
+      added: radixColors[appendSuffix("jade")],
+      modified: radixColors[appendSuffix("yellow")],
+      deleted: radixColors[appendSuffix("ruby")],
+      renamed: radixColors[appendSuffix("purple")],
+      conflicting: radixColors[appendSuffix("pink")],
+      submodule: radixColors[appendSuffix("brown")],
     },
 
     diff: {
-      inserted: radixColors[addSuffix("teal")],
-      insertedA: radixColors[addSuffix({ scale: "teal", alpha: true })],
-      removed: radixColors[addSuffix("tomato")],
-      removedA: radixColors[addSuffix({ scale: "tomato", alpha: true })],
+      inserted: radixColors[appendSuffix("teal")],
+      insertedA: radixColors[appendSuffix({ scale: "teal", alpha: true })],
+      removed: radixColors[appendSuffix("tomato")],
+      removedA: radixColors[appendSuffix({ scale: "tomato", alpha: true })],
     },
 
     gradiation: {
