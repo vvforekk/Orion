@@ -11,5 +11,5 @@ Deno.test("Verify the generated theme file", async () => {
       "dist/test/themes/orion-color-theme.json",
     ),
   );
-  assertEquals(themeJson["name"], "Orion");
+  assertEquals(themeJson.name, "Orion");
 });
