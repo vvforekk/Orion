@@ -41,12 +41,14 @@ export const createPalette = (
   };
 
   const primaryColor = radixColors[appendSuffix(primary)];
-  const primaryAColor = radixColors[appendSuffix({ scale: primary, alpha: true })];
+  const primaryAColor =
+    radixColors[appendSuffix({ scale: primary, alpha: true })];
   const secondaryColor = radixColors[appendSuffix(secondary)];
   const secondaryAColor =
     radixColors[appendSuffix({ scale: secondary, alpha: true })];
   const accentColor = radixColors[appendSuffix(accent)];
-  const accentAColor = radixColors[appendSuffix({ scale: accent, alpha: true })];
+  const accentAColor =
+    radixColors[appendSuffix({ scale: accent, alpha: true })];
 
   // for normal color scales
   const syntaxColorFilter = (color: Color): Color =>
