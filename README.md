@@ -1,6 +1,8 @@
 # Orion Theme
 
-A customizable vscode theme, built on `Deno` and `Radix Colors`.
+Modern theme for vscode,
+focused on cleanness and customizability,
+built on `Radix Colors`' palette.
 
 ## Gallery
 
@@ -23,14 +25,13 @@ A customizable vscode theme, built on `Deno` and `Radix Colors`.
 3. Richer syntax highlight color is better.
 4. Should be customizable.
 
-## Installation
+## Getting Started
 
-### From VSCode Marketplace
+### Install from VSCode Marketplace
 
-Install from
-[https://marketplace.visualstudio.com/items?itemName=SaiYs.orion-vscode]
+https://marketplace.visualstudio.com/items?itemName=SaiYs.orion-vscode
 
-### From source
+### Build from source
 
 1. Clone the repository
 
@@ -59,17 +60,19 @@ Install from
 
 ### `orion-vscode.accentColor`
 
+#### default: `indigo`
+
 Pick your favorite color from the colorful palette by `Radix Colors`.
 
-(default: "indigo")
 
 ### `orion-vscode.neutralGray`
+
+#### default: `false`
 
 By default, saturated grayscale colors from `Radix Colors` are used. If you
 prefer desaturated grayscale colors, you can disable it and use neutral gray
 colors.
 
-(default: false)
 
 ## Language support
 
@@ -85,12 +88,14 @@ colors.
 - YAML
 - Markdown
 
-You don't find your languages? Please make a issue or PR!
+You don't find your one? Issue or PRs are welcome!
 
 ## Inspirated by
 
-Orion is made from lots of inspiration by others' themes. Thanks for great
-works.
+Orion is made from lots of inspiration by others' themes and library.
+Thanks for great works.
+
+- [vscode(Deno binding)](https://github.com/narumincho/vscode)
 
 - [Night Wolf](https://github.com/mao-santaella-rs/NightWolfTheme)
 - [Catppuccin](https://github.com/catppuccin/vscode)
