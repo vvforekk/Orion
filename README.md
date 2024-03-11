@@ -35,7 +35,7 @@ https://marketplace.visualstudio.com/items?itemName=SaiYs.orion-vscode
 1. Clone the repository
 
    ```sh
-   gh repo clone SaiYs/Orion
+   gh repo clone vvforekk/Orion
    ```
 
 2. Build the extension
