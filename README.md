@@ -1,8 +1,7 @@
 # Orion Theme
 
-Modern theme for vscode,
-focused on cleanness and customizability,
-built on `Radix Colors`' palette.
+Modern theme for vscode, focused on cleanness and customizability, built on
+`Radix Colors`' palette.
 
 ## Gallery
 
@@ -64,7 +63,6 @@ https://marketplace.visualstudio.com/items?itemName=SaiYs.orion-vscode
 
 Pick your favorite color from the colorful palette by `Radix Colors`.
 
-
 ### `orion-vscode.neutralGray`
 
 #### default: `false`
@@ -72,7 +70,6 @@ Pick your favorite color from the colorful palette by `Radix Colors`.
 By default, saturated grayscale colors from `Radix Colors` are used. If you
 prefer desaturated grayscale colors, you can disable it and use neutral gray
 colors.
-
 
 ## Language support
 
@@ -92,8 +89,8 @@ You don't find your one? Issue or PRs are welcome!
 
 ## Inspirated by
 
-Orion is made from lots of inspiration by others' themes and library.
-Thanks for great works.
+Orion is made from lots of inspiration by others' themes and library. Thanks for
+great works.
 
 - [vscode(Deno binding)](https://github.com/narumincho/vscode)
 
