@@ -4,7 +4,7 @@ import { Color, PaletteType } from "@/types/index.ts";
 export const uiColors = (
   palette: PaletteType,
 ): Record<string, string | Color> => ({
-  // Contrast (properties only for high-contrast theme)
+  // Contrast
   // "contrastActiveBorder": palette.border.active,
   // "contrastBorder": palette.border.default,
 

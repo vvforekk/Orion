@@ -6,10 +6,15 @@ import { denoPlugins } from "esbuild-deno-loader";
 await compile();
 
 await esbuild.build({
-  plugins: [...denoPlugins({
-    importMapURL: "file://" +
-      fromFileUrl(new URL(`${Deno.cwd()}/import_map.json`, import.meta.url)),
-  })] as esbuild.Plugin[],
+  plugins: [
+    ...denoPlugins({
+      importMapURL: `file://${
+        fromFileUrl(
+          new URL(`${Deno.cwd()}/import_map.json`, import.meta.url),
+        )
+      }`,
+    }),
+  ] as esbuild.Plugin[],
   entryPoints: [
     fromFileUrl(new URL(`${Deno.cwd()}/src/main.ts`, import.meta.url)),
   ],
